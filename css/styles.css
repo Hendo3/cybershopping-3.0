@@ -1,0 +1,255 @@
+body {
+	justify-content: center;
+	background-color: #0a0a0a;
+	color: #0ff;
+	font-family: 'Share Tech Mono', monospace;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	padding: 2rem;
+	border-radius: 8px;
+	margin: 1rem auto;
+	max-height: fit-content;
+}
+
+h1 {
+	font-size: 2rem;
+	color: #0ff;
+	text-align: center;
+	margin-bottom: 1rem;
+	text-shadow: 0 0 8px #0ff;
+}
+
+h2 {
+	border-bottom: 2px solid #0ff;
+	padding-bottom: 0.5rem;
+	margin-top: 2rem;
+}
+
+footer {
+	/* let the footer on the top bottom  5% of screen independant than size of screen*/
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	color: #0ff;
+	background-color: rgba(10, 10, 10, 0.9);
+	top: auto;
+	bottom: 0;
+	width: 100%;
+	height: 5vh;
+}
+
+.container {
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.navbar {
+	background-color: rgba(10, 10, 10, 0.9);
+	border-bottom: 2px solid #0ff;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.logo {
+	font-size: 1.5rem;
+	color: #0ff;
+	text-shadow: 0 0 8px #0ff;
+	padding: 0.5rem 1rem;
+	transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0;
+	gap: 1rem;
+
+}
+
+.nav-links a {
+	color: #0ff;
+	text-emphasis: none;
+	transition: color 0.3s;
+	font-size: 1rem;
+	padding: 0.5rem 2rem;	
+	text-decoration: none;
+}
+
+.nav-links a:hover {
+	color: #ff0;
+	text-shadow: 0 0 8px #ff0;
+
+}
+
+.banner {
+	background-color: rgba(10, 10, 10, 0.8);
+	color: #0ff;
+	padding: 2rem;
+	text-align: center;
+	border-radius: 8px;
+	margin-bottom: 2rem;
+	box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.items-section, .category-section {
+	display: flex;
+	flex-direction: column;
+	background-color: #111;
+	border: 1px solid #0ff;
+	border-radius: 8px;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.items-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 1rem;
+	padding: 1rem;
+}
+
+.item  {
+	display: flex;
+	flex-direction: column;
+	background-color: #111;
+	border: 1px solid #0ff;
+	border-radius: 8px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	text-align: center;
+	font-size: 1rem;
+	transition: transform 0.2s, box-shadow 0.2s;
+	align-items: center;
+
+}
+
+.item h3 {
+	font-size: 1.2rem;
+	color: #0f0f0f;
+	margin: 0;
+	text-shadow: 0 0 8px #0ff;
+
+}
+
+.meta {
+	font-size: 0.8rem;
+	color: #0ff;
+	margin-top: 0.5rem;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.item .btn-add {
+	width: 100%;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: auto;
+}
+
+.item .info {
+	gap: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	font-size: 0.9rem;
+	justify-content: flex-start;
+}
+
+.category-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 1rem;
+	padding: 1rem 0;	
+	text-align: center;
+
+}
+
+.category {
+	border: 1px solid #0ff;
+	background-color: #111;
+	border-radius: 8px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+	text-align: center;
+	font-size: 1rem;
+	transition: transform 0.2s, box-shadow 0.2s;
+	cursor: pointer;
+}
+
+.category .btn-add {
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	text-align: center;
+	text-decoration: none;
+	background-color: #0ff;
+	color: #000;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+	height: 100%;
+}
+
+.btn-add {
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	text-align: center;
+	text-decoration: none;
+	background-color: #0ff;
+	color: #000;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+	background-color: #0ff;
+	color: #000;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	width: 100%;
+	text-align: center;
+	margin-top: 1rem;
+	align-items: center;
+}
+
+.btn-primary:hover {
+	background-color: #ff0;
+	transform: scale(1.01);
+}
+
+.btn-add:hover {
+	background-color: #ff0;
+	transform: scale(1.05);
+}
+
+.btn-add:active {
+	transform: scale(0.95);
+}
+

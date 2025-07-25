@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberwares - Byte & Blades Store</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <header class="navbar">
+    <h1 class="logo">Byte & Blades Store</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./accessories.html">Accessories</a></li>
+            <li><a href="#">Weapons</a></li>
+            <li><a href="#">Packs</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div id="filter-bar">
+        <label
+        for="filter-category">Category:</label>
+        <select id="filter-category">
+            <option value="">All</option>
+            <option value="fashionware">Fashionware</option>
+            <option value="cyberware-customization">Cyberware Customization</option>
+            <option value="neuralware">Neuralware</option>
+            <option value="implants">Implants</option>
+            <option value="voice-box">Voice Box</option>
+            <option value="bioware-nanotech">Bioware & Nanotech</option>
+            <option value="biotech">Biotech</option>
+            <option value="bioenhancement-tabs">Bioenhancement Tabs</option>
+            <option value="rna-memory-tabs">RNA Memory Tabs</option>
+            <option value="bodyweapons">Bodyweapons</option>
+            <option value="cyberoptics">Cyberoptics</option>
+            <option value="cyberoptics-options">Cyberoptics Options</option>
+            <option value="cyberaudio">Cyberaudio</option>
+            <option value="cyberaudio-options">Cyberaudio Options</option>
+            <option value="cyberlimbs">Cyberlimbs</option>
+            <option value="cyberlimbs-options">Cyberlimbs Options</option>
+            <option value="hands-feet">Hands & Feet</option>
+            <option value="fingers">Fingers</option>
+            <option value="cyberlimbs-builtin">Cyberlimbs Built-in</option>
+            <option value="cyberweapons-builtins">Cyberweapons Built-ins</option>
+            <option value="linear-frame">Linear Frame</option>
+            <option value="bodyplating">Bodyplating</option>
+            <option value="full-borg">Full Borgs</option>
+            <option value="full-borg-options">Full Borg Options</option>
+            <option value="exotic-modifications">Exotic Modifications</option>
+            <option value="exotic-packages">Exotic Packages</option>
+            <option value="chipware">Chipware</option>
+            <option value="behavioral-chips">Behavioral Chips</option>>
+        </select>
+
+        <label for="filter-price">Price:</label>
+        <input type="number" id="filter-price-min" placeholder="Min" />
+        <input type="number" id="filter-price-max" placeholder="Max" />
+
+        <label for="filter-search">HL:</label>
+        <input type="number" id="filter-hl-min" placeholder="Min" />
+        <input type="number" id="filter-hl-max" placeholder="Max" />
+
+        <label for="filter-cir">CIR:</label>
+        <input type="text" id="filter-cir" placeholder="CIR">
+
+        <button id="filter-apply" class="btn-primary">Apply Filters</button>
+    </div>
+
+    <div id="category-section" class="categories-section">
+        <h1 id="title-category">Choose a Category</h1>
+        <div id="category-list" class="category-list"><!-- categories appear here --></div>
+    </div>
+
+    <div id="items-section" class="items-section">
+        <h2 id="items-title"></h2>        
+        <div id="items-list" class="items-list">
+            <h2 id="items-title"></h2>
+            <div id="items-list"><!-- itens carregados aqui --></div>
+        </div>  
+        <button id="back" class="btn-primary">Back</button>
+        
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Byte & Blades Store.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
