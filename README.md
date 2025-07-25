@@ -28,9 +28,12 @@ Cybershopping é um site desenvolvido para emular uma loja de itens para RPG de 
 
 ## Estrutura do Projeto
 
-- `index.html` — Página principal do site
-- `css/styles.css` — Estilos customizados
-- `js/script.js` — Lógica e funcionalidades do site
+- `index.html` - Página principal do site
+- `css/styles.css` - Estilos customizados
+- `js/script.js` - Lógica e funcionalidades do site
+- `assets/Cyberware_Listing_CP2020.pdf` - PDF de Cyberwares utilizado para criar o Parser
+- `data/cyberwares.json` - Parser para os Cyberwares
+- `data/equipment.json` - Parser para Equipamentos
 
 ## Contribuição
 
